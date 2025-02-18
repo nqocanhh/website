@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Have you ever read any book here?</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+      
+        h1 {
+            text-align: center; 
+            font-family: 'Roboto', sans-serif; 
+            font-size: 32px; 
+            color: #333;
+            margin-top: 20px;
+        }
+        
+        
+        .image-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* 3 cột ảnh */
+            gap: 10px; /* Khoảng cách giữa các ảnh */
+            justify-items: center; 
+            margin: 0 auto;
+            max-width: 1200px; /* Đảm bảo không vượt quá chiều rộng màn hình */
+        }
+
+        /* Cài đặt ảnh */
+        .image-container img {
+            width: 95%;
+            height: 95%;
+            border-solid: 1px; /* Góc bo tròn cho ảnh */
+        }
+
+        /* Đảm bảo ảnh thay đổi linh hoạt khi cửa sổ thay đổi kích thước */
+        @media (max-width: 768px) {
+            .image-container {
+                grid-template-columns: repeat(2, 1fr); /* 2 cột ảnh khi màn hình nhỏ */
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Have you ever read any book here?</h1>
+    <div class="image-container">
+        <img src="https://tiemsach.org/wp-content/uploads/2023/07/Ebook-Dac-nhan-tam.jpg">
+        <img src="https://th.bing.com/th/id/OIP.8BpKTDZcsxgwUXIp8cncTwAAAA?rs=1&pid=ImgDetMain">
+        <img src="https://newshop.vn/public/uploads/products/40814/sach-con-duong-hanh-phuc.jpg">
+        <img src="https://newshop.vn/public/uploads/products/1254/giai-phap-cho-doi-moi-va-sang-tao-bia-truoc.jpg">
+        <img src="https://sachhoc.com/image/catalog/Chuyennganh/Ky-nang/Phut-nhin-lai-minh.jpg">
+        <img src="https://th.bing.com/th/id/OIP.aJ7zTsLM89JkuHI3d1N3ngHaLo?rs=1&pid=ImgDetMain">
+    </div>
+
+</body>
+</html>
